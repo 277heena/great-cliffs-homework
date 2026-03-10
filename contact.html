@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Contact - Great Cliffs</title>
+<meta charset="utf-8">
+
+<style>
+
+body{
+font-family: Arial;
+text-align:center;
+}
+
+.container{
+width:900px;
+margin:auto;
+}
+
+.main-menu ul{
+list-style:none;
+padding:0;
+}
+
+.main-menu li{
+display:inline;
+margin:15px;
+font-weight:bold;
+}
+
+form{
+margin-top:20px;
+}
+
+input, select, textarea{
+margin:8px;
+padding:6px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="main-header">
+
+<div class="logo">
+<h2>Great Cliff's Logo</h2>
+</div>
+
+<nav class="main-menu">
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li>Cliffs</li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<main>
+
+<h1>Contacting Us</h1>
+
+<p>
+If you want more information about the Cliffs, Hours of Operation, Facilities
+or have questions about this site, please contact us using the information below.
+</p>
+
+<h2>Phone:</h2>
+<p>(800) GCLIFFS</p>
+
+<h2>Email:</h2>
+<p>info@greatcliffs.com</p>
+
+<h2>Fill Out This Form:</h2>
+
+<form action="/contact" method="post">
+
+<p>Enter your full name</p>
+<input type="text" name="fullname">
+
+<p>Enter your email</p>
+<input type="email" name="email">
+
+<p>Enter your phone</p>
+<input type="text" name="phone">
+
+<p>How should we contact you?</p>
+<input type="radio" name="contact"> Email
+<input type="radio" name="contact"> Phone
+
+<p>Which Cliff are you inquiring about?</p>
+<select>
+<option>West Cliff</option>
+<option>North Cliff</option>
+<option>East Cliff</option>
+<option>South Cliff</option>
+</select>
+
+<p>How did you hear about us?</p>
+<textarea rows="4" cols="40"></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</main>
+
+<footer>
+
+<p>&copy; 2026 Great Cliffs</p>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
