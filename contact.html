@@ -1,132 +1,123 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<title>Contact - Great Cliffs</title>
-<meta charset="utf-8">
-
-<style>
-
-body{
-font-family: Arial;
-text-align:center;
-}
-
-.container{
-width:900px;
-margin:auto;
-}
-
-.main-menu ul{
-list-style:none;
-padding:0;
-}
-
-.main-menu li{
-display:inline;
-margin:15px;
-font-weight:bold;
-}
-
-form{
-margin-top:20px;
-}
-
-input, select, textarea{
-margin:8px;
-padding:6px;
-}
-
-</style>
-
+    <meta charset="utf-8">
+    <title>Contact - Great Cliffs of California</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<body id="contact">
 
-<body>
+    <header>
+        <div class="main-header">
+            <div class="logo">
+                <h2>Great Cliffs</h2>
+            </div>
 
-<div class="container">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cliffs.html">Cliffs</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header>
+    <main>
+        <h1>Contacting Us</h1>
+        <p>
+            You can drop by the visitors information center at the cliff site that you plan on visiting. They are open
+            7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about
+            the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
+        </p>
 
-<div class="main-header">
+        <div class="contactinfo">
+            <div class="phone">
+                <span>Phone:</span>
+                <span>(800)GCLIFFS</span>
+            </div>
+            <div class="email">
+                <span>Email:</span>
+                <span>info@greatcliffs.com</span>
+            </div>
+        </div>
 
-<div class="logo">
-<h2>Great Cliff's Logo</h2>
-</div>
+        <form action="/contact" method="post">
+            <fieldset>
+                <legend>Contact Form</legend>
 
-<nav class="main-menu">
+                <div class="textbox">
+                    <label>Name:</label>
+                    <input type="text" name="name" placeholder="John Doe">
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li>Cliffs</li>
-<li><a href="activities.html">Activities</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="johndoe@gmail.com">
 
-</nav>
+                    <label>Phone:</label>
+                    <input type="text" name="phone" placeholder="xxx-xxx-xxxx">
+                </div>
 
-</div>
+                <div class="radios">
+                    <label>How should we contact you?</label>
+                    <input type="radio" name="contact" value="email" checked> Email
+                    <input type="radio" name="contact" value="phone"> Phone
+                </div>
 
-</header>
+                <div class="selectmenu">
+                    <label>Which Cliff are you inquiring?</label>
+                    <select>
+                        <option>West Cliff</option>
+                        <option>North Cliff</option>
+                        <option>East Cliff</option>
+                        <option>South Cliff</option>
+                    </select>
+                </div>
 
-<main>
+                <div class="commentbox">
+                    <label>How did you hear about us:</label>
+                    <textarea></textarea>
+                </div>
 
-<h1>Contacting Us</h1>
+                <div class="button">
+                    <input type="submit" value="Inquire">
+                </div>
+            </fieldset>
+        </form>
+    </main>
 
-<p>
-If you want more information about the Cliffs, Hours of Operation, Facilities
-or have questions about this site, please contact us using the information below.
-</p>
+    <section>
+        <ul id="partners">
+            <li class="partner"><img src="images/partner/partner1.jpg" alt="Partner 1"></li>
+            <li class="partner"><img src="images/partner/partner2.jpg" alt="Partner 2"></li>
+            <li class="partner"><img src="images/partner/partner3.jpg" alt="Partner 3"></li>
+            <li class="partner"><img src="images/partner/partner4.jpg" alt="Partner 4"></li>
+            <li class="partner"><img src="images/partner/partner5.jpg" alt="Partner 5"></li>
+            <li class="partner"><img src="images/partner/partner6.jpg" alt="Partner 6"></li>
+        </ul>
+    </section>
 
-<h2>Phone:</h2>
-<p>(800) GCLIFFS</p>
+    <footer>
+        <div id="nondisclaimer">
+            <div class="copy">
+                &copy; Copyright 2026 :: GreatCliffs.com
+            </div>
 
-<h2>Email:</h2>
-<p>info@greatcliffs.com</p>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
 
-<h2>Fill Out This Form:</h2>
-
-<form action="/contact" method="post">
-
-<p>Enter your full name</p>
-<input type="text" name="fullname">
-
-<p>Enter your email</p>
-<input type="email" name="email">
-
-<p>Enter your phone</p>
-<input type="text" name="phone">
-
-<p>How should we contact you?</p>
-<input type="radio" name="contact"> Email
-<input type="radio" name="contact"> Phone
-
-<p>Which Cliff are you inquiring about?</p>
-<select>
-<option>West Cliff</option>
-<option>North Cliff</option>
-<option>East Cliff</option>
-<option>South Cliff</option>
-</select>
-
-<p>How did you hear about us?</p>
-<textarea rows="4" cols="40"></textarea>
-
-<br><br>
-
-<input type="submit" value="Submit">
-
-</form>
-
-</main>
-
-<footer>
-
-<p>&copy; 2026 Great Cliffs</p>
-
-</footer>
-
-</div>
+        <div id="disclaimer">
+            <p>
+                This website is designed and created solely for educational purposes only at Westcliff University.
+                All contents are not intended for any commercial gain or use.
+            </p>
+        </div>
+    </footer>
 
 </body>
-
 </html>
