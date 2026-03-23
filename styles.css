@@ -18,8 +18,6 @@ header{
     background-position:center;
 }
 
-/* different header image per page */
-
 #home header{
     background-image:url("images/cliff1.jpg");
 }
@@ -37,24 +35,28 @@ header{
 }
 
 .main-header{
-    background:rgba(0,0,0,0.4);
+    background:rgba(0,0,0,0.3);
     height:100%;
     padding:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
 }
 
-.logo{
-    color:white;
-}
+/* LOGO */
 
 .logo h1{
+    color:white;
     margin:0;
+    font-size:28px;
 }
 
-/* NAVIGATION */
+/* NAV */
 
 .main-menu ul{
     list-style:none;
     padding:0;
+    margin:0;
 }
 
 .main-menu li{
@@ -63,14 +65,24 @@ header{
 
 .main-menu a{
     text-decoration:none;
-    color:white;
-    padding:10px 20px;
-    background:#3b6ea8;
+    padding:12px 20px;
+    background:#eee;
+    color:#333;
     margin-right:5px;
 }
 
-.main-menu a:hover{
+.main-menu a.active{
     background:#9ed034;
+    color:white;
+}
+
+/* CLOCK */
+
+#timeofday{
+    background:linear-gradient(to right,#6ec6ff,#ffd180);
+    text-align:center;
+    padding:12px;
+    font-size:16px;
 }
 
 /* MAIN */
@@ -80,10 +92,14 @@ main{
 }
 
 main h2{
-    color:#3b6ea8;
+    color:#9ed034;
 }
 
-/* CLIFF GALLERY */
+main h3{
+    margin-top:20px;
+}
+
+/* CLIFFS */
 
 .cliff-gallery{
     display:flex;
@@ -100,10 +116,6 @@ main h2{
     width:100%;
     height:180px;
     object-fit:cover;
-}
-
-.cliff-card h3{
-    text-align:center;
 }
 
 /* TABLE */
@@ -123,34 +135,21 @@ th{
 td{
     border:1px solid #ccc;
     padding:10px;
-    text-align:center;
 }
 
-/* CONTACT FORM */
+/* FORM */
 
 form{
     width:70%;
     margin:auto;
 }
 
-input,select,textarea{
-    width:100%;
-    padding:10px;
-    margin-top:5px;
-    margin-bottom:15px;
-}
-
 /* PARTNERS */
 
 #partners{
-    text-align:center;
+    background:#4a86b8;
     padding:30px;
-    background:#f3f8ff;
-}
-
-#partners ul{
-    list-style:none;
-    padding:0;
+    text-align:center;
 }
 
 .partner{
@@ -159,17 +158,26 @@ input,select,textarea{
 }
 
 .partner img{
-    width:120px;
-    height:60px;
-    object-fit:contain;
+    width:80px;
+    height:80px;
+    background:white;
+    padding:10px;
+    border-radius:50%;
 }
 
 /* FOOTER */
 
 footer{
-    background:#1b3556;
-    color:white;
+    background:#cde2a3;
     padding:20px;
-    display:flex;
-    justify-content:space-between;
+    text-align:center;
+}
+
+.footer-social a{
+    margin:0 10px;
+    background:#4a86b8;
+    color:white;
+    padding:10px;
+    border-radius:50%;
+    text-decoration:none;
 }
