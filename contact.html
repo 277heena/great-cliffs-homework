@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="contact" onload="disableButton(true)">
+<body id="contact">
 
 <div class="container">
 
@@ -49,8 +49,31 @@
             </div>
 
             <div class="randomcode">
-                <input type="text" name="randomcode" placeholder="Enter characters">
+                <input type="text" id="randomcode" name="randomcode" placeholder="Enter characters">
                 <p id="codes"></p>
+            </div>
+
+            <label for="contact-choice">Preferred Contact Method</label>
+            <select id="contact-choice">
+                <option id="selectprompt" value="">Choose one</option>
+                <option id="emailoption" value="email">Email</option>
+                <option id="phoneoption" value="phone">Phone</option>
+                <option id="textoption" value="text">Text Message</option>
+            </select>
+
+            <div id="emailbox" class="choicebox">
+                <label>Best Email Address</label>
+                <input type="email" name="preferredemail">
+            </div>
+
+            <div id="phonebox" class="choicebox">
+                <label>Best Phone Number</label>
+                <input type="text" name="preferredphone">
+            </div>
+
+            <div id="textbox" class="choicebox">
+                <label>Best Number for Texts</label>
+                <input type="text" name="preferredtext">
             </div>
 
             <div class="button">
@@ -73,5 +96,6 @@
 
 <script src="js/site_scripts.js"></script>
 <script src="js/randomcodes.js"></script>
+<script src="js/contact_choice.js"></script>
 </body>
 </html>

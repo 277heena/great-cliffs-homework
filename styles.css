@@ -153,7 +153,8 @@ form label{
 
 form input[type="text"],
 form input[type="email"],
-form textarea{
+form textarea,
+select{
     width:100%;
     padding:10px;
     border:1px solid #ccc;
@@ -185,6 +186,11 @@ form textarea{
     border:1px solid #ccc;
 }
 
+.choicebox{
+    display:none;
+    margin-top:15px;
+}
+
 .button{
     margin-top:20px;
 }
@@ -196,6 +202,7 @@ form textarea{
     color:rgba(255, 255, 255, 0.7);
     font-size:16px;
     cursor:not-allowed;
+    width:auto;
 }
 
 /* PARTNERS */

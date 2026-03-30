@@ -17,16 +17,18 @@ function generateCode() {
 }
 
 function disableButton(buttonValue) {
-    btnvalue.disabled = buttonValue;
+    if (btnvalue) {
+        btnvalue.disabled = buttonValue;
 
-    if (buttonValue) {
-        btnvalue.style.backgroundColor = "rgba(73, 119, 209, 0.3)";
-        btnvalue.style.color = "rgba(255,255,255,0.7)";
-        btnvalue.style.cursor = "not-allowed";
-    } else {
-        btnvalue.style.backgroundColor = "rgba(73, 119, 209, 1)";
-        btnvalue.style.color = "rgba(255,255,255,1)";
-        btnvalue.style.cursor = "pointer";
+        if (buttonValue) {
+            btnvalue.style.backgroundColor = "rgba(73, 119, 209, 0.3)";
+            btnvalue.style.color = "rgba(255,255,255,0.7)";
+            btnvalue.style.cursor = "not-allowed";
+        } else {
+            btnvalue.style.backgroundColor = "rgba(73, 119, 209, 1)";
+            btnvalue.style.color = "rgba(255,255,255,1)";
+            btnvalue.style.cursor = "pointer";
+        }
     }
 }
 

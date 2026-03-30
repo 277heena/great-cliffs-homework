@@ -1,4 +1,3 @@
-site_scripts.js
 var partners = [
     "images/partner/partner1.jpg",
     "images/partner/partner2.jpg",

@@ -1,4 +1,3 @@
-digclock.js
 function currentTime() {
     var d = new Date();
     var hr = d.getHours();
