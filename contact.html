@@ -1,81 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Contact</title>
-<meta charset="utf-8">
-
-<link rel="stylesheet" href="styles.css">
-
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="contact">
+<body id="contact" onload="disableButton()">
 
 <div class="container">
 
-<header>
+    <header>
+        <div class="main-header">
+            <div class="logo">
+                <h1>Great Cliffs</h1>
+            </div>
 
-<div class="main-header">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cliffs.html">Cliffs</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="logo">
-<h1>Great Cliffs</h1>
-</div>
+    <main>
+        <h2>Contact Us</h2>
 
-<nav class="main-menu">
+        <form>
+            <label>Name</label>
+            <input type="text" name="name">
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="cliffs.html">Cliffs</a></li>
-<li><a href="activities.html">Activities</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+            <label>Email</label>
+            <input type="email" name="email">
 
-</nav>
+            <label>Phone</label>
+            <input type="text" name="phone">
 
-</div>
+            <label>Message</label>
+            <textarea rows="5" name="message"></textarea>
 
-</header>
+            <div class="commentbox">
+                <label>How did you hear about us:</label>
+                <textarea name="comments"></textarea>
+            </div>
 
-<main>
+            <div class="randomcode">
+                <input type="text" name="randomcode" placeholder="Enter characters">
+                <p id="codes"></p>
+            </div>
 
-<h2>Contact Us</h2>
+            <div class="button">
+                <input type="submit" id="submit" value="Inquire">
+            </div>
+        </form>
+    </main>
 
-<form>
+    <section id="partners">
+        <h2>Our Partners</h2>
+        <ul id="partners-list"></ul>
+    </section>
 
-<label>Name</label>
-<input type="text">
-
-<label>Email</label>
-<input type="email">
-
-<label>Phone</label>
-<input type="text">
-
-<label>Message</label>
-<textarea rows="5"></textarea>
-
-<input type="submit" value="Send Message">
-
-</form>
-
-</main>
-
-<section id="partners">
-
-<h2>Our Partners</h2>
-
-<ul id="partners-list"></ul>
-
-</section>
-
-<footer>
-
-<div>2026 Great Cliffs</div>
-<div>Outdoor Adventures</div>
-
-</footer>
+    <footer>
+        <div>2026 Great Cliffs</div>
+        <div>Outdoor Adventures</div>
+    </footer>
 
 </div>
-<script src="script.js"></script>
+
+<script src="js/site_scripts.js"></script>
+<script src="js/randomcodes.js"></script>
 </body>
 </html>

@@ -144,12 +144,72 @@ form{
     margin:auto;
 }
 
+form label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+    margin-bottom:10px;
+}
+
+.commentbox{
+    margin-top:20px;
+}
+
+.randomcode{
+    margin-top:20px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.randomcode input{
+    width:220px;
+}
+
+#codes{
+    background:#eee;
+    padding:10px 20px;
+    font-size:20px;
+    font-weight:bold;
+    margin:0;
+    border:1px solid #ccc;
+}
+
+.button{
+    margin-top:20px;
+}
+
+.button input{
+    padding:12px 25px;
+    border:none;
+    background-color:rgba(73, 119, 209, 0.3);
+    color:rgba(255, 255, 255, 0.7);
+    font-size:16px;
+    cursor:not-allowed;
+}
+
 /* PARTNERS */
 
 #partners{
     background:#4a86b8;
     padding:30px;
     text-align:center;
+}
+
+#partners ul{
+    list-style:none;
+    padding:0;
+    margin:0;
 }
 
 .partner{

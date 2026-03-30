@@ -1,100 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Activities</title>
-<meta charset="utf-8">
-
-<link rel="stylesheet" href="styles.css">
-
+    <title>Activities</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body id="activities">
 
 <div class="container">
 
-<header>
+    <header>
+        <div class="main-header">
+            <div class="logo">
+                <h1>Great Cliffs</h1>
+            </div>
 
-<div class="main-header">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cliffs.html">Cliffs</a></li>
+                    <li><a class="active" href="activities.html">Activities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="logo">
-<h1>Great Cliffs</h1>
-</div>
+    <main>
+        <h2>Activities</h2>
 
-<nav class="main-menu">
+        <table>
+            <tr>
+                <th>Activity</th>
+                <th>West</th>
+                <th>North</th>
+                <th>East</th>
+                <th>South</th>
+            </tr>
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="cliffs.html">Cliffs</a></li>
-<li><a href="activities.html">Activities</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+            <tr>
+                <td>Hiking</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
 
-</nav>
+            <tr>
+                <td>Camping</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>No</td>
+            </tr>
 
-</div>
+            <tr>
+                <td>Photography</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+    </main>
 
-</header>
+    <section id="partners">
+        <h2>Our Partners</h2>
+        <ul id="partners-list"></ul>
+    </section>
 
-<main>
-
-<h2>Activities</h2>
-
-<table>
-
-<tr>
-<th>Activity</th>
-<th>West</th>
-<th>North</th>
-<th>East</th>
-<th>South</th>
-</tr>
-
-<tr>
-<td>Hiking</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-
-<tr>
-<td>Camping</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-
-<tr>
-<td>Photography</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-
-</table>
-
-</main>
-
-<section id="partners">
-
-<h2>Our Partners</h2>
-
-<ul id="partners-list"></ul>
-
-</section>
-
-<footer>
-
-<div>2026 Great Cliffs</div>
-<div>Outdoor Adventures</div>
-
-</footer>
+    <footer>
+        <div>2026 Great Cliffs</div>
+        <div>Outdoor Adventures</div>
+    </footer>
 
 </div>
-<script src="script.js"></script>
+
+<script src="js/site_scripts.js"></script>
 </body>
 </html>
-
