@@ -450,3 +450,17 @@ footer {
         align-items: flex-start;
     }
 }
+.gc-navbar{
+    background: rgba(38, 41, 61, 0.85) !important;
+}
+
+.gc-navbar .navbar-brand,
+.gc-navbar .nav-link{
+    color: #ffffff !important;
+}
+
+.gc-navbar .navbar-nav .active .nav-link,
+.gc-navbar .navbar-nav .nav-link:hover{
+    background: #9ed034 !important;
+    color: #ffffff !important;
+}
