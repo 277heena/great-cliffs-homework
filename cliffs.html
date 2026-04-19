@@ -1,76 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Cliffs</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body id="cliffs">
 
-<div class="container">
+<nav class="navbar navbar-expand-xl navbar-dark sticky-top gc-navbar">
+    <div class="container gc-nav-inner">
+        <a class="navbar-brand gc-brand" href="index.html">
+            <span class="brand-line1">Great</span>
+            <span class="brand-line2">Cliffs</span>
+            <span class="brand-line3">of California</span>
+        </a>
 
-    <header>
-        <div class="main-header">
-            <div class="logo">
-                <h1>Great Cliffs</h1>
-            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="cliffs.html">Cliffs</a></li>
-                    <li><a href="activities.html">Activities</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
+                <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </div>
+</nav>
 
+<header></header>
+
+<div class="container main-container">
     <main>
-        <h2>Explore the Cliffs</h2>
+        <h2 class="page-title">California's Greatest Cliffs</h2>
 
-        <div class="cliff-gallery">
-            <div class="cliff-card">
-                <img src="images/cliff1.jpg" alt="West Cliff">
-                <h3>West Cliff</h3>
+        <p class="lead-copy">
+            The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their
+            own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California.
+            Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch
+            spots and overnight cabins.
+        </p>
+
+        <p class="lead-copy">
+            No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile
+            radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.
+        </p>
+
+        <div class="row cliff-gallery-row">
+            <div class="col-md-6 mb-4">
+                <div class="cliff-card">
+                    <h3>West Cliff</h3>
+                    <img src="images/cliff1.jpg" alt="West Cliff" class="img-fluid">
+                </div>
             </div>
 
-            <div class="cliff-card">
-                <img src="images/cliff2.jpg" alt="North Cliff">
-                <h3>North Cliff</h3>
+            <div class="col-md-6 mb-4">
+                <div class="cliff-card">
+                    <h3>North Cliff</h3>
+                    <img src="images/cliff2.jpg" alt="North Cliff" class="img-fluid">
+                </div>
             </div>
 
-            <div class="cliff-card">
-                <img src="images/cliff3.jpg" alt="East Cliff">
-                <h3>East Cliff</h3>
+            <div class="col-md-6 mb-4">
+                <div class="cliff-card">
+                    <h3>East Cliff</h3>
+                    <img src="images/cliff3.jpg" alt="East Cliff" class="img-fluid">
+                </div>
             </div>
 
-            <div class="cliff-card">
-                <img src="images/cliff4.jpg" alt="South Cliff">
-                <h3>South Cliff</h3>
-            </div>
-
-            <div class="cliff-card">
-                <img src="images/cliff5.jpg" alt="Cliff Rock">
-                <h3>Cliff Rock</h3>
+            <div class="col-md-6 mb-4">
+                <div class="cliff-card">
+                    <h3>South Cliff</h3>
+                    <img src="images/cliff4.jpg" alt="South Cliff" class="img-fluid">
+                </div>
             </div>
         </div>
     </main>
 
-    <section id="partners">
-        <h2>Our Partners</h2>
-        <ul id="partners-list"></ul>
+    <section id="partners" class="partners-section">
+        <div class="row no-gutters text-center" id="partners-list"></div>
     </section>
 
     <footer>
-        <div>2026 Great Cliffs</div>
-        <div>Outdoor Adventures</div>
-    </footer>
+        <div class="footer-top text-center">
+            <p>&copy; Copyright 2021 :: GreatCliffs.com</p>
+        </div>
 
+        <div class="footer-social text-center">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>
+                This website is designed and created solely for educational purposes only at Westcliff University.
+                All contents are not intended for any commercial gain or use.
+            </p>
+        </div>
+    </footer>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="js/site_scripts.js"></script>
 </body>
 </html>
